@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>We Stand With Bo</TITLE>
+        <LINK rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <LINK rel="stylesheet" type="text/css" href="standwithbo.css" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:900,300' rel='stylesheet' type='text/css'>
+            
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </HEAD> 
+    <BODY>
+        <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="tagline1">We <span class="highlight">Stand With</span></h2>
+                <h1 id="tagline2"><span class="highlight">Bo</span> Pelini</h1>
+            </div>
+        </div>
+        
+        <div class="row" id="cta">
+            <div lass="col-md-6 col-md-offset-3">
+                <img id="sprite" src="transparent.gif" title="Stand With Bo!" />
+                <div id="ctatext">Click the "N" To Show Your Support</div>
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <div class="row" id="reasons">
+            <div class="col-md-4">
+                <h3>Bo Stands By His Players</h3>
+                <p>
+                    Bo Pelini has grown as a man and as a coach in the past 5 years.
+                    He has also helped raise and lead a generation of young men that will
+                    become the future leaders of Nebraska and the world. Bo isn't afraid to
+                    defend his players just as if they were family.
+                </p>
+                <span class="readmore">
+                    <a href="http://btn.com/2013/09/17/around-the-web-reaction-to-bo-pelinis-comments/" title="Stands By His Players">
+                        Read more...
+                    </a>
+                </span>
+            </div>
+            <div class="col-md-4">
+                <h3>Bo Stands By His Words</h3>
+                <p>
+                    Bo is an old fashioned guy. He means what he says and says what he means.
+                    He is a straight-shooter, often wearing his emotions on his sleeves.
+                    His sideline attitude has been criticized by many but he's never been afraid
+                    to own up to what he has said.
+                </p>
+                <span class="readmore">
+                    <a href="http://www.empowernetwork.com/amydwilliams/blog/nebraska-coach-pelini-says-a-scholarship-will-be-there-for-darlington/" title="Stands By His Words">
+                        Read more...
+                    </a>
+                </span>
+            </div>
+            <div class="col-md-4">
+                <h3>Bo Stands By His Community</h3>
+                <p>
+                    Many a Lincoln citizen has seen Bo jogging around campus. He's a normal guy.
+                    He embodies the Nebraskan spirit and work ethic. He's been very engaged in
+                    local community events and has been instrumental in many young people's lives.
+                </p>
+                <span class="readmore">
+                    <a href="http://www.1011now.com/home/headlines/Team-Jack-Will-Walk-Red-Carpet-at-ESPY-Awards-215916831.html" title="Stands By His Community">
+                        Read more...
+                    </a>
+                </span>
+            </div>
+        </div>
+        
+        <div id="wrapup">
+            "Husker fans are a rare breed. We are the best fans in the world, but we also have
+            unrealistic expectations. We need to calm down and ask ourself what getting rid of
+            Coach Pelini would accomplish..."
+        </div>
+        
+        <div id="footer">
+            Brought to you by a few diehard Husker fans at <a href="http://www.sharproot.com" title="Shaproot">
+            Sharproot Media</a>.
+        </div>
+        
+        </div> <!--container -->
+
+        <SCRIPT type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></SCRIPT>
+        <SCRIPT type="text/javascript">
+            $(document).ready(function(){
+                $("#cta").click(function(){
+                    var elm = $(this);
+                    $.post("http://www.standwithbo.com/vote.php", function(data){
+                        var obj = $.parseJSON(data);
+                        var count = obj.votecount;
+                        
+                        elm.html("<div id='result'>Thanks for joining the " + count + " other <span id='true'>TRUE</span> Husker fans out there in supporting Bo Pelini.</div>");
+                        elm.unbind("click");
+                        $("#result").show();
+                    });
+                });
+            });
+        </SCRIPT>
+        <SCRIPT type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-44127350-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </SCRIPT>
+        
+    </BODY>
+</HTML>

@@ -1,0 +1,107 @@
+body {
+    background-color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bolder;
+    color: #FF0000;
+    margin: 0px;
+    padding: 0px;
+}
+
+#tagline1 {
+    text-align: center;
+    font-size: 9em;
+}
+
+#tagline2 {
+    font-size: 15em;
+    margin-top: -40px;
+}
+
+.highlight {
+    text-shadow:
+    -3px -3px 0 #FFF,
+    3px -3px 0 #FFF,
+    -3px 3px 0 #FFF,
+    3px 3px 0 #FFF;
+    letter-spacing: 20px;
+}
+
+div#cta {
+    color: #FFF;
+    margin-top: 50px;
+}
+
+div#cta:hover {
+    color: #FF0000;
+}
+
+img#sprite {
+    margin-left: 25%;
+    width: 247px;
+    height: 230px;
+    background:url(huskersprite.png) 0 -227px;
+    cursor: pointer;
+}
+
+img#sprite:hover{
+    background:url(huskersprite.png) 0 0px;
+}
+
+div#ctatext {
+    float: right;
+    margin-top: 115px;
+    margin-right: 25%;    
+}
+
+div#result {
+    display: none;
+    padding-top: 115px;
+    height: 230px;
+    text-align:center;
+    font-size: 1.8em;
+    color: #FFF;
+}
+
+span#true {
+    color: #FF0000;
+}
+
+#reasons {
+    margin-top: 50px;
+    text-align: left;
+    color: #FFF;
+}
+
+#reasons h3 {
+    border-bottom: 1px solid #FFF;
+}
+
+#reasons p {
+    font-weight: 300;
+    min-height: 125px;
+}
+
+#reasons a {
+    color: #FF0000;
+}
+
+div#wrapup {
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    color: #d0d0d0;
+}
+
+div#footer {
+    text-align: center;
+}
+
+div#footer a {
+    color: green;
+    text-decoration: underline;
+}
