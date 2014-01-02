@@ -41,7 +41,7 @@ div#cta:hover {
 }
 
 img#sprite {
-    margin-left: 25%;
+    /*margin-left: 25%;*/
     width: 600px;
     height: 218px;
     background:url(huskersprite.png) 0 -225px;
@@ -60,7 +60,7 @@ div#ctatext {
 
 div#result {
     display: none;
-    padding-top: 115px;
+    padding-top: 50px;
     height: 218px;
     text-align:center;
     font-size: 1.8em;
